@@ -1,0 +1,31 @@
+import sys
+Import('builder')
+
+builder.plugin('core_actions', Split("""
+	sdk 
+	actions 
+	reflection
+	command
+	common
+	tools
+"""), Split("""
+	open.cpp
+	save.cpp
+	exit.cpp
+	new.cpp
+	undo.cpp
+	redo.cpp
+	history.cpp
+	delete.cpp
+	add.cpp
+	addfile.cpp
+	copy.cpp
+	paste.cpp
+	cut.cpp
+	center.cpp
+	showlog.cpp
+	showconfig.cpp
+	usetool.cpp
+	properties.cpp
+"""))
+

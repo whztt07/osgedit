@@ -1,0 +1,146 @@
+<ui>
+  <menubar name="MenuBar">
+    <menu action="FileMenu">
+	<menuitem action="ActionNew"/>
+	<menuitem action="ActionOpen"/>
+	<separator/>
+	<menuitem action="ActionSave"/>
+	<menuitem action="ActionSaveAs"/>
+	<separator/>
+	<menuitem action="ActionProperties"/>
+	<separator/>
+	<menuitem action="ActionExit"/>
+    </menu>
+    <menu action="EditMenu">
+	<menuitem action="ActionUndo"/>
+	<menuitem action="ActionRedo"/>
+	<separator/>
+	<menuitem action="ActionCut"/>
+	<menuitem action="ActionCopy"/>
+	<menuitem action="ActionPaste"/>
+	<menuitem action="ActionDelete"/>
+	<separator/>
+	<menuitem action="ActionShowConfig"/>
+    </menu>
+    <menu action="ViewMenu">
+	<menuitem action="ActionCenter"/>
+	<separator/>
+	<menuitem action="ActionShowLog"/>
+	<separator/>
+	<menuitem action="ActionHistory"/>
+    </menu>
+    <menu action="AddMenu">
+    	<menu action="GroupMenu">
+            <menuitem action="ActionAddGroup"/>
+            <menuitem action="ActionAddClearNode"/>
+            <menuitem action="ActionAddClipNode"/>
+            <menuitem action="ActionAddCoordinateSystemNode"/>
+            <menuitem action="ActionAddLightSource"/>
+            <menuitem action="ActionAddLOD"/>
+            <menuitem action="ActionAddOccluderNode"/>
+            <menuitem action="ActionAddProjection"/>
+            <menuitem action="ActionAddProxyNode"/>
+            <menuitem action="ActionAddSequence"/>
+            <menuitem action="ActionAddSwitch"/>
+            <menuitem action="ActionAddTexGenNode"/>
+	    <separator/>
+            <menuitem action="ActionAddAutoTransform"/>
+            <menuitem action="ActionAddCamera"/>
+            <menuitem action="ActionAddCameraView"/>
+            <menuitem action="ActionAddMatrixTransform"/>
+            <menuitem action="ActionAddPositionAttitudeTransform"/>
+        </menu>
+    	<menu action="GeodeMenu">
+            <menuitem action="ActionAddGeode"/>
+            <menuitem action="ActionAddBillboard"/>
+            <menuitem action="ActionAddDrawPixels"/>
+        </menu>
+    	<menu action="DrawableMenu">
+            <menuitem action="ActionAddGeometry"/>
+            <menuitem action="ActionAddShapeDrawable"/>
+        </menu>
+    	<menu action="ShapeMenu">
+            <menuitem action="ActionAddSphere"/>
+            <menuitem action="ActionAddBox"/>
+            <menuitem action="ActionAddCone"/>
+            <menuitem action="ActionAddCylinder"/>
+            <menuitem action="ActionAddCapsule"/>
+            <menuitem action="ActionAddTriangleMesh"/>
+            <menuitem action="ActionAddHeightField"/>
+            <menuitem action="ActionAddCompositeShape"/>
+        </menu>
+	<separator/>
+	<menuitem action="ActionAddStateSet"/>
+    	<menu action="StateAttributeMenu">
+    	  <menu action="StateAttributeNormalMenu">
+            <menuitem action="ActionAddAlphaFunc"/>
+            <menuitem action="ActionAddBlendColor"/>
+            <menuitem action="ActionAddBlendEquation"/>
+            <menuitem action="ActionAddBlendFunc"/>
+            <menuitem action="ActionAddClampColor"/>
+            <menuitem action="ActionAddClipPlane"/>
+            <menuitem action="ActionAddColorMask"/>
+            <menuitem action="ActionAddColorMatrix"/>
+            <menuitem action="ActionAddCullFace"/>
+            <menuitem action="ActionAddDepth"/>
+            <menuitem action="ActionAddFog"/>
+            <menuitem action="ActionAddFragmentProgram"/>
+            <menuitem action="ActionAddFrameBufferObject"/>
+            <menuitem action="ActionAddFrontFace"/>
+            <menuitem action="ActionAddLight"/>
+            <menuitem action="ActionAddLightModel"/>
+            <menuitem action="ActionAddLineStipple"/>
+            <menuitem action="ActionAddLineWidth"/>
+            <menuitem action="ActionAddLogicOp"/>
+            <menuitem action="ActionAddMaterial"/>
+            <menuitem action="ActionAddMultisample"/>
+            <menuitem action="ActionAddPoint"/>
+            <menuitem action="ActionAddPolygonMode"/>
+            <menuitem action="ActionAddPolygonOffset"/>
+            <menuitem action="ActionAddPolygonStipple"/>
+            <menuitem action="ActionAddProgram"/>
+            <menuitem action="ActionAddScissor"/>
+            <menuitem action="ActionAddShadeModel"/>
+            <menuitem action="ActionAddStencil"/>
+            <menuitem action="ActionAddStencilTwoSided"/>
+            <menuitem action="ActionAddVertexProgram"/>
+            <menuitem action="ActionAddViewport"/>
+    	  </menu>
+    	  <menu action="StateAttributeTextureMenu">
+            <menuitem action="ActionAddPointSprite"/>
+            <menuitem action="ActionAddTexEnv"/>
+            <menuitem action="ActionAddTexEnvCombine"/>
+            <menuitem action="ActionAddTexEnvFilter"/>
+            <menuitem action="ActionAddTexGen"/>
+            <menuitem action="ActionAddTexMat"/>
+            <menuitem action="ActionAddTexture1D"/>
+            <menuitem action="ActionAddTexture2D"/>
+            <menuitem action="ActionAddTexture2DArray"/>
+            <menuitem action="ActionAddTexture3D"/>
+            <menuitem action="ActionAddTextureCubeMap"/>
+            <menuitem action="ActionAddTextureRectangle"/>
+    	  </menu>
+
+	    <separator/>
+            <menuitem action="ActionAddShader"/>
+        </menu>
+	<separator/>
+	<menuitem action="ActionAddFile"/>
+	<separator/>
+	<menuitem action="ActionAddText"/>
+    </menu>
+  </menubar>
+
+  <toolbar name="ToolBar">
+	<toolitem action="ActionNew"/>
+	<toolitem action="ActionOpen"/>
+	<toolitem action="ActionSave"/>
+	<separator/>
+	<toolitem action="ActionUndo"/>
+	<toolitem action="ActionRedo"/>
+	<separator/>
+	<toolitem action="ActionDelete"/>
+	<separator/>
+	<toolitem action="ActionToolPick"/>
+  </toolbar>
+</ui>

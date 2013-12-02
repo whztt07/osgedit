@@ -1,0 +1,11 @@
+Import('builder')
+
+builder.library('controls3d', 'CONTROLS3D_LIBRARY', Split("""
+	command
+	common
+	reflection
+"""), Split("""
+	control3dfactory.cpp
+"""))
+
+SConscript(dirs=Split('core'), exports={'builder': builder})

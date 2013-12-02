@@ -1,0 +1,8 @@
+import sys
+Import('builder')
+
+builder.program('osgedit', Split("sdk plugin gui common tools"), "osgedit.cpp")
+
+SConscript(dirs=Split('reflection doxygen wrappers gui command common sdk actions tools plugin'), 
+	exports={'builder': builder})
+

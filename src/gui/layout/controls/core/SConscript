@@ -1,0 +1,18 @@
+Import('builder')
+
+builder.plugin('core_controls', Split("""
+	reflection
+	command
+	common
+	controls
+"""), Split("""
+	textcontrol.cpp
+	checkcontrol.cpp
+	numericcontrol.cpp
+	enumcontrol.cpp
+	colorcontrol.cpp
+	filecontrol.cpp
+	textareacontrol.cpp
+	vec3dcontrol.cpp
+	matrixdcontrol.cpp
+"""))

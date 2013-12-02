@@ -1,0 +1,10 @@
+Import('builder')
+
+builder.library('sdk', 'SDK_LIBRARY', Split("""
+	common
+	command
+	reflection
+	gui
+"""), Split("""
+	osgedit.cpp
+"""))

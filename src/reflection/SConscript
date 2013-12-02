@@ -1,0 +1,9 @@
+Import('builder')
+
+builder.library('reflection', 'REFLECTION_LIBRARY', Split(""), Split("""
+classreflection.cpp
+propertyreflection.cpp
+reflectionregistry.cpp
+reflectioncache.cpp
+hierarchymanager.cpp
+"""))

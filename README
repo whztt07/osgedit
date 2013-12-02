@@ -1,0 +1,67 @@
+  ____  _____________   ___ __
+ / __ \/ __/ ___/ __/__/ (_) /_
+/ /_/ /\ \/ (_ / _// _  / / __/
+\____/___/\___/___/\_,_/_/\__/_________________________________________
+
+*** Requirements:
+
+SCons
+gtkmm-2.4
+gtkglext-1.0
+libxml++-2.6
+libgtksourceviewmm-1.0
+OSG >= 2.2.0
+
+How to get the resources in win32:
+
+http://www.gtkmm.org/download.shtml#Binary
+Download both GTKMM and GTK devel packages
+
+http://www.openscenegraph.com/osgwiki/pmwiki.php/Downloads/Downloads
+
+*** BUILD AND INSTALL
+
+You can build OSGEdit in two ways: debug or release. In debug mode, you 
+doesn't have to install it, it can be run locally. In release mode, you 
+have to install it in order to check it.
+
+
+A. Debian/Ubuntu
+
+Run 
+	dpkg-buildpackage -rfakeroot 
+from the top dir and a debian package will be made. Install it normally.
+
+
+B. Other unices
+
+To compile in debug mode:
+scons debug
+
+To compile + install in release mode:
+scons install
+
+If you want to compile only in release mode:
+scons release
+
+
+C. Win32
+
+In win32 you can only build in release mode, debug mode is still not 
+supported. All that you have to do is to run the build.bat script. If 
+you have all the dependencies correctly installed, this will build 
+automatically OSGEdit.
+
+NOTE. Multi-thread architectures
+If you have an intel core duo/quadro, etc, you can compile with several 
+threads this way:
+scons -j NTHREADS <target>
+
+You can even make the debian/ubuntu package compiling with several 
+threads this way:
+SCONS_OPTS='-j NTHREADS' dpkg-buildpackage -rfakeroot
+
+Change NTHREADS with the number of processors/threads of your machine.
+
+Have fun!
+

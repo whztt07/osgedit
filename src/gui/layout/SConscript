@@ -1,0 +1,17 @@
+Import('builder')
+
+builder.library('layout', 'LAY_LIBRARY', Split("""
+common
+command
+reflection
+gridcontrols
+controls
+"""), Split("""
+layout.cpp
+layoutgrid.cpp
+autolayoutgrid.cpp
+xmllayoutbuilder.cpp
+layoutcache.cpp
+"""))
+
+SConscript(dirs=Split('controls gridcontrols'), exports={'builder': builder})

@@ -1,0 +1,5 @@
+Import('builder')
+
+builder.library('controls', 'CONTROLS_LIBRARY', Split(""), Split("controlfactory.cpp"))
+
+SConscript(dirs=Split('core'), exports={'builder': builder})

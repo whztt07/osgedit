@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout ignore_missing="false">
+  <item property="_name" label="Name" control="TextControl"/>
+  <item property="_shaderSource" label="Source code" control="SourceCodeControl">
+    <parameter language="text/x-csrc"/>
+  </item>
+</layout>

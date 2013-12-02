@@ -1,0 +1,12 @@
+Import('builder')
+
+builder.library('plugin', 'PLUGIN_LIBRARY', Split("""
+	common
+	actions
+	controls
+	controls3d
+"""), Split("""
+	plugin.cpp
+	extension.cpp
+	extensionregistry.cpp
+"""))

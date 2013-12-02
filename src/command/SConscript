@@ -1,0 +1,6 @@
+Import('builder')
+
+builder.library('command', 'CMD_LIBRARY', Split(""), Split("""
+	command.cpp
+	commandhistory.cpp
+"""))

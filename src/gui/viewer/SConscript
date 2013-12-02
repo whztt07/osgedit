@@ -1,0 +1,6 @@
+Import('env')
+Import('lib_dir')
+
+env.Library(lib_dir+'/osgviewer',Split("""
+GraphicsWindowGTK.cpp
+"""))

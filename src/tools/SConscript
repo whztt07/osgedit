@@ -1,0 +1,7 @@
+Import('builder')
+
+builder.library('tools', 'TOOLS_LIBRARY', Split("""
+	sdk
+"""), Split("""
+	toolpick.cpp
+"""))

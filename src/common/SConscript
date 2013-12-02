@@ -1,0 +1,12 @@
+Import('builder')
+
+builder.library('common', 'COMMON_LIBRARY', Split("""
+	reflection
+	command
+"""), Split("""
+	config.cpp
+	namingcontrol.cpp
+	clipboard.cpp
+	log.cpp
+	selection.cpp
+"""))

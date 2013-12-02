@@ -1,0 +1,23 @@
+Import('builder')
+
+builder.library('gui', 'GUI_LIBRARY', Split("""
+actions
+common
+command
+reflection
+layout
+cameras
+controls3d
+"""), Split("""
+historyviewer.cpp
+objecttree.cpp
+reflectioneditor.cpp
+osgviewport.cpp
+control3dmanager.cpp
+mainwindow.cpp
+logwindow.cpp
+configwindow.cpp
+statswindow.cpp
+"""))
+
+SConscript(dirs=Split('layout controls3d cameras'), exports={'builder':builder})

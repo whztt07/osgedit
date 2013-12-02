@@ -1,0 +1,11 @@
+Import('builder')
+
+builder.plugin('core_controls3d', Split("""
+	controls3d
+	reflection
+	command
+"""), Split("""
+	positioncontrol3d.cpp
+	rotationcontrol3d.cpp
+	scalecontrol3d.cpp
+"""))

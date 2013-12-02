@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<layout ignore_missing="false">
+  <tab label="Basic"/>
+  <item property="_name" label="Name" control="TextControl"/>
+  <item property="_lightnum" label="Number" control="NumericControl"/>
+  <group label="Color">
+    <item property="_ambient" label="Ambient" control="ColorControl"/>
+    <item property="_diffuse" label="Diffuse" control="ColorControl"/>
+    <item property="_specular" label="Specular" control="ColorControl"/>
+  </group>
+  <group label="Spot">
+    <item property="_spot_exponent" label="Exponent" control="NumericControl"/>
+    <item property="_spot_cutoff" label="Spread" control="NumericControl"/>
+  </group>
+  <tab label="Advanced"/>
+  <group label="Attenuation">
+    <item property="_constant_attenuation" label="Constant" control="NumericControl"/>
+    <item property="_linear_attenuation" label="Linear" control="NumericControl"/>
+    <item property="_quadratic_attenuation" label="Quadratic" control="NumericControl"/>
+  </group>
+</layout>

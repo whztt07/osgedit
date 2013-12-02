@@ -1,0 +1,10 @@
+Import('builder')
+
+builder.library('gridcontrols', 'GRID_CONTROLS_LIBRARY', Split("""
+	reflection
+	command
+"""), Split("""
+	textgridcontrol.cpp
+	checkgridcontrol.cpp
+	numericgridcontrol.cpp
+"""))
